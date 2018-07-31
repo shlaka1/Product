@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 	  <script src="/js/home.js"></script>
+
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="/home">List Products</a></li>
+  <li><a href="/create">Add Product</a></li>
+  <li><a href="/delete">Delete Product</a></li>
+  <li><a href="/up">Update Product</a></li>
+</ul>
+
+
+<div class="container">
+	<h1>Product Table</h1>
+		<div class="row col-md-7 table-responsive">
+			<table id="customerTable" class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>NO</th>
+						<th>Id</th>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Related Products</th>
+						<th>Link of Image</th>
+					
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			
+			<div id="resultMsgDiv">
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>
